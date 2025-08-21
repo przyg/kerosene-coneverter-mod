@@ -16,9 +16,9 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, kerosene_converter.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> GB = CREATIVE_MODE_TABS.register("gb",
+    public static final RegistryObject<CreativeModeTab> GB1 = CREATIVE_MODE_TABS.register("gb1",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TEST.get()))
-                    .title(Component.translatable("creativetab.gb"))
+                    .title(Component.translatable("creativetab.gb1"))
                     .displayItems((itemDisplayParameters, output) -> {
                         // dodaj itemy tutaj eg. pOutput.accept(ModItems.*nazwa*.get());
                         output.accept(ModBlocks.KEROCONVBLOCK.get());

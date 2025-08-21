@@ -66,32 +66,32 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 
-#[[dependencies.${mod_id}]] #optional
+[[dependencies.${mod_id}]] #optional
     # the modid of the dependency
-  ##  modId="tfmg" #mandatory
+    modId="tfmg" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
-  ##  mandatory=true #mandatory
+    mandatory=true #mandatory
     # The version range of the dependency
-  ##  versionRange="*" #mandatory
+    versionRange="*" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the dependency is not mandatory
     # BEFORE - This mod is loaded BEFORE the dependency
     # AFTER - This mod is loaded AFTER the dependency
-  ##  ordering="NONE"
+    ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
-  ##  side="BOTH"
-##[[dependencies.${mod_id}]] #optional
+    side="BOTH"
+[[dependencies.${mod_id}]] #optional
     # the modid of the dependency
-  ##  modId="crusty_chunks" #mandatory
+    modId="crusty_chunks" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
-  ##  mandatory=true #mandatory
+    mandatory=true #mandatory
     # The version range of the dependency
-   ## versionRange="*" #mandatory
+    versionRange="*" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the dependency is not mandatory
     # BEFORE - This mod is loaded BEFORE the dependency
     # AFTER - This mod is loaded AFTER the dependency
-  ##  ordering="NONE"
+    ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
-   ## side="BOTH"
+    side="BOTH"
 
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
