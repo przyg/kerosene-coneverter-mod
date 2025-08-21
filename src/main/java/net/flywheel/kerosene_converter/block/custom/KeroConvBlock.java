@@ -15,6 +15,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import org.jetbrains.annotations.Nullable;
+import net.flywheel.kerosene_converter.block.ModBlocks;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
+
 
 public class KeroConvBlock extends HorizontalDirectionalBlock implements EntityBlock {
 
@@ -41,6 +49,8 @@ public class KeroConvBlock extends HorizontalDirectionalBlock implements EntityB
     }
 
 
+
+
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
@@ -50,4 +60,10 @@ public class KeroConvBlock extends HorizontalDirectionalBlock implements EntityB
             }
         };
     }
+    public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flag) {
+        tooltip.add(Component.literal("Converts TFMG kerosene to Warium kerosene!"));
+    }
+
+
+
 }
