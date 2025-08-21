@@ -60,9 +60,7 @@ public class KeroConvBlock extends HorizontalDirectionalBlock implements EntityB
             }
         };
     }
-    public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.literal("Converts TFMG kerosene to Warium kerosene!"));
-    }
+
 
 
 

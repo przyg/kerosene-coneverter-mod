@@ -21,7 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, kerosene_converter.MOD_ID);
 
     public static final RegistryObject<Block> KEROCONVBLOCK = registerBlock("keroconvblock",
-            () -> new KeroConvBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+            () -> new KeroConvBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
