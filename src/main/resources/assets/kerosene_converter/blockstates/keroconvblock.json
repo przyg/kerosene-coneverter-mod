@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "kerosene_converter:block/keroconvblock" },
+    "facing=south": { "model": "kerosene_converter:block/keroconvblock", "y": 180 },
+    "facing=west":  { "model": "kerosene_converter:block/keroconvblock", "y": 270 },
+    "facing=east":  { "model": "kerosene_converter:block/keroconvblock", "y": 90 }
+  }
+}

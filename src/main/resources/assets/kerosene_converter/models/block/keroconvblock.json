@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "kerosene_converter:block/aluminum_block",
+    "front": "kerosene_converter:block/aluminum_block_front",
+    "side": "kerosene_converter:block/aluminum_block",
+    "particle": "kerosene_converter:block/aluminum_block"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "converter_loop": {
+    "sounds": [
+      {
+        "name": "kerosene_converter:converter_loop",
+        "stream": true
+      }
+    ]
+  }
+}
