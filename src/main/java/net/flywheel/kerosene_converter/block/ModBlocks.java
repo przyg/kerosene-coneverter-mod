@@ -25,12 +25,12 @@ public class ModBlocks {
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block); //rejestruje blok
-        registerBlockItem(name, toReturn); //rejestruje item bloku
-        return toReturn; //zwraca
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
     }
 
-    //klasa pomocnicza która automatycznie rejestruje item bloku
+
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

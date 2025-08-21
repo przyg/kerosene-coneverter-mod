@@ -33,14 +33,14 @@ public class KeroConvBlock extends HorizontalDirectionalBlock implements EntityB
         builder.add(FACING);
     }
 
-    // === BlockEntity ===
+
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return new KeroConvBlockEntity(pos, state);
     }
 
-    // === Ticker (logika konwersji co tick) ===
+
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
